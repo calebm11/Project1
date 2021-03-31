@@ -7,9 +7,11 @@ The files in this repository were used to configure the network depicted below.
 
 Images/Project_Diagram.png
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  install-elk.yml
+  pentest.yml
+  filebeat-playbook.yml
 
 This document contains the following details:
 - Description of the Topologu
@@ -77,11 +79,9 @@ Web-2 at 10.0.0.8
 
 We have installed the following Beats on these machines:
 - Filebeat
-- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat is used to forward and centralize log data. It is used to monitor the log data and locations.
-- Metricbeat is used to monitor system metrics and statistics.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
